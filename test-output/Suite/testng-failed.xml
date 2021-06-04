@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.Wordpress.test.ProfilePageTest">
+        <methods>
+          <include name="login"/>
+          <include name="_01_ModifyFirstLastName"/>
+          <include name="nav"/>
+          <include name="_02_ValidateSavedChanges"/>
+          <include name="setUp"/>
+          <include name="_03_ResetToOriginalValues"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Wordpress.test.ProfilePageTest -->
+      <class name="com.Wordpress.test.LoginPageTest">
+        <methods>
+          <include name="nav"/>
+          <include name="setUp"/>
+          <include name="_02_loginWithValidCredentials"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Wordpress.test.LoginPageTest -->
+      <class name="com.Wordpress.test.ProfileLinkPageTest">
+        <methods>
+          <include name="_02_addExistingLink"/>
+          <include name="nav"/>
+          <include name="login"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.Wordpress.test.ProfileLinkPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
