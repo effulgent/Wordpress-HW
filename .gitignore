@@ -1,0 +1,11 @@
+#eclipse settings
+.settings/
+.project
+.classpath
+
+#IntelliJ idea files
+.idea
+.iml
+
+#log files
+.log
